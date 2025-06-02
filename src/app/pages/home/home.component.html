@@ -1,0 +1,37 @@
+<div class="home-page-container">
+    <div class="home-page-header">
+        <h1>Discover Kerala's Districts</h1>
+        <p class="subtitle">Journey Through <span class="kerala-highlight">God's Own Country</span></p>
+        <p class="description">
+            Explore the rich cultural heritage, breathtaking landscapes, and unique traditions of Kerala's 14 distinctive districts. From the misty hills of Idukki to the pristine beaches of Thiruvananthapuram, embark on a digital journey through the heart of South India's most beautiful state.
+        </p>
+        <hr class="divider">
+        
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">14</span>
+                <span class="stat-label">Districts</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">44</span>
+                <span class="stat-label">Rivers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">590</span>
+                <span class="stat-label">Coastline (km)</span>
+            </div>
+        </div>
+    </div>
+    <hr class="content-divider">
+
+    <div class="cards">
+        <div class="row">
+            @for(i of mockData; track i.id) {
+                <div class="col-md-4 mb-4">
+                    <app-cards [image]="i.image" [title]="i.title" [description]="i.description" [link]="i.link"></app-cards>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
